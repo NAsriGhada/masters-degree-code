@@ -112,18 +112,24 @@ nav a:hover {
     box-shadow: 0 12px 25px rgba(0, 169, 204, 0.7);
 }
 
+.hexagon-container {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.7));
+}
 
 .hexagon {
-    width: 250px;
-    height: 290px;
-    position: relative;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(145deg, #00d9ff, #008fbd);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .hexagon img {
