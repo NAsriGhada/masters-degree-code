@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Ghada Nasri" />
+    <meta name="keywords" content="HTML, CSS, Portfolio, Web Development" />
+    <meta name="author" content="Ghada Nasri" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+      <div class="content">
+        <h1>Hello, It's Me</h1>
+        <h2>Ghada Nasri</h2>
+        <h3>And I'm a <span class="highlight">Web Developer</span></h3>
+        <p>
+          Welcome to my portfolio! I specialize in creating dynamic, interactive
+          web experiences.
+        </p>
+        <div class="social-links">
+          <a href="#"
+            ><i class="bx bxl-facebook bx-border-circle bx-tada"></i
+          ></a>
+          <a href="#"
+            ><i class="bx bxl-linkedin bx-border-circle bx-tada"></i
+          ></a>
+          <a href="#"
+            ><i class="bx bxl-instagram bx-border-circle bx-tada"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+      <div class="hexagon-container">
+        <div class="hexagon">
+          <img src="profile.png" alt="Profile Picture" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Ghada Nasri, a passionate web developer skilled in HTML, CSS,
+        and JavaScript.
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>My Work</h2>
+      <ul>
+        <li>Project 1: <a href="https://devlaunchers.org/">View Project</a></li>
+        <li>
+          Project 2: <a href="https://www.meryashome.com/">View Project</a>
+        </li>
+        <li>Project 3: <a href="https://groupado.com/en/">View Project</a></li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="" method="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ghada Nasri. All rights reserved.</p>
+      <ul>
+        <li><a href="https://github.com/NAsriGhada">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
