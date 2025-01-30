@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Store Landing Page</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white fixed w-full shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <div id="logo" class="text-xl font-bold">Store Name</div>
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <label for="menu-toggle" class="block md:hidden cursor-pointer text-2xl">☰</label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Our Store</h1>
+            <p>Your one-stop destination for all your shopping needs.</p>
+            <button>Start Shopping</button>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <img src="sweater.png" alt="Sweater" />
+                    <div class="content">
+                        <h3>Cozy Sweater</h3>
+                        <p>Stay warm and stylish with our premium sweaters.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="sneakers.png" alt="Sneakers" />
+                    <div class="content">
+                        <h3>Trendy Sneakers</h3>
+                        <p>Step up your game with our latest collection of sneakers.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="bag.png" alt="Bag" />
+                    <div class="content">
+                        <h3>Elegant Bag</h3>
+                        <p>Perfect for every occasion, our bags are a must-have.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="product-card" id="contact">
+                    <img src="candle.png" alt="Candle" />
+                    <div class="content">
+                        <h3>Luxury Candle</h3>
+                        <p>Bring a touch of warmth and elegance to your home.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Store Name. All rights reserved.</p>
+        <p>
+            Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and
+            <a href="#">Twitter</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
