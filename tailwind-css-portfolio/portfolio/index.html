@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex flex-wrap justify-between items-center md:p-6">
+        <h1 class="text-xl font-bold md:text-2xl">Ghada's Portfolio</h1>
+        <nav>
+            <ul class="flex flex-wrap space-x-4 md:space-x-6">
+                <li><a href="#home" class="hover:text-blue-500 md:text-lg">Home</a></li>
+                <li><a href="#projects" class="hover:text-blue-500 md:text-lg">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500 md:text-lg">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center text-white text-center px-4 md:px-8">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg max-w-lg md:max-w-2xl">
+            <h2 class="text-4xl font-bold md:text-5xl">Hello, I'm Ghada!</h2>
+            <p class="text-lg mt-2 md:text-xl">A passionate web developer</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 text-center px-4 md:px-8">
+        <h2 class="text-2xl font-bold mb-6 md:text-3xl">My Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div class="bg-white p-4 shadow rounded-lg md:p-6">HTML</div>
+            <div class="bg-white p-4 shadow rounded-lg md:p-6">CSS</div>
+            <div class="bg-white p-4 shadow rounded-lg md:p-6">JavaScript</div>
+            <div class="bg-white p-4 shadow rounded-lg md:p-6">React</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-200 px-4 md:px-8">
+        <h2 class="text-2xl font-bold text-center mb-6 md:text-3xl">My Projects</h2>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-white p-4 shadow rounded-lg md:p-6 hover:shadow-xl transition duration-300 ease-in-out">
+                <img src="project1.jpg" alt="Project 1"
+                    class="rounded-lg mb-4 w-full hover:scale-105 transition duration-300">
+                <h3 class="font-bold md:text-xl">HTML Project</h3>
+                <p class="md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sit ipsa quo perspiciatis sunt cumque natus dolorem nam dolorum, in adipisci, provident incidunt qui debitis error placeat harum recusandae? Esse?</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg md:p-6 hover:shadow-xl transition duration-300 ease-in-out">
+                <img src="project2.jpg" alt="Project 2"
+                    class="rounded-lg mb-4 w-full hover:scale-105 transition duration-300">
+                <h3 class="font-bold md:text-xl">CSS Project</h3>
+                <p class="md:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magnam eos tempore quisquam, pariatur corporis rerum voluptates quasi earum numquam omnis alias ducimus, expedita fugiat blanditiis tempora dicta assumenda excepturi?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 text-center px-4 md:px-8">
+        <h2 class="text-2xl font-bold mb-6 md:text-3xl">Contact Me</h2>
+        <form class="max-w-lg mx-auto bg-white p-6 shadow rounded-lg md:p-8">
+            <input type="text" placeholder="Your Name" class="w-full p-2 border rounded mb-4 md:p-3">
+            <input type="email" placeholder="Your Email" class="w-full p-2 border rounded mb-4 md:p-3">
+            <textarea placeholder="Your Message" class="w-full p-2 border rounded mb-4 md:p-3"></textarea>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded w-full sm:w-auto md:px-6 md:py-3">Send
+                Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 px-4 md:p-6">
+        <p class="md:text-lg">&copy; 2025 Ghada. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
