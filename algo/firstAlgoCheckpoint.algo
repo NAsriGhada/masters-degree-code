@@ -1,0 +1,34 @@
+ALGORITHM CountSentenceProperties
+
+VAR
+    wordNumber, vowelNumber, characterNumber: INTEGER;
+    character: CHAR;
+
+BEGIN
+    wordNumber := 1;  
+    vowelNumber := 0;
+    characterNumber := 0;
+
+    READ(character);
+    
+    WHILE (character <> ".") DO
+        characterNumber := characterNumber + 1;
+
+        IF (character = "o" OR character = "i" OR character = "e" OR character = "u" OR character = "a" OR character = "y" 
+         OR character = "O" OR character = "I" OR character = "E" OR character = "U" OR character = "A" OR character = "Y") THEN
+            vowelNumber := vowelNumber + 1;
+        END_IF;
+
+        IF (character = " ") THEN
+            wordNumber := wordNumber + 1;
+        END_IF;
+
+        READ(character); 
+    END_WHILE;
+
+    characterNumber := characterNumber + 1; 
+
+    WRITE("Number of words: ", wordNumber);
+    WRITE("Number of characters: ", characterNumber);
+    WRITE("Number of vowels: ", vowelNumber);
+END
