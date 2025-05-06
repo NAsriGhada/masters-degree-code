@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Lionel Messi",
+    "team": "Inter Miami",
+    "nationality": "Argentina",
+    "jerseyNumber": 10,
+    "age": 36,
+    "image": "/imgs/messi.avif"
+  },
+  {
+    "id": 2,
+    "name": "Cristiano Ronaldo",
+    "team": "Al-Nassr",
+    "nationality": "Portugal",
+    "jerseyNumber": 7,
+    "age": 39,
+    "image": "/imgs/cristiano-ronaldo.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Kylian Mbappé",
+    "team": "PSG",
+    "nationality": "France",
+    "jerseyNumber": 7,
+    "age": 25,
+    "image": "/imgs/kylian-mbappe.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mohamed Salah",
+    "team": "Liverpool",
+    "nationality": "Egypt",
+    "jerseyNumber": 11,
+    "age": 32,
+    "image": "/imgs/mohamed-salah.jpg"
+  }
+]
