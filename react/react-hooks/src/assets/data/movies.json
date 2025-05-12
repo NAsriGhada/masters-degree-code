@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Inception",
+    "description": "A thief who steals corporate secrets through dreams.",
+    "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg",
+    "rating": 8.8
+  },
+  {
+    "title": "Interstellar",
+    "description": "A team travels through a wormhole in space.",
+    "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "rating": 8.6
+  },
+  {
+    "title": "The Dark Knight",
+    "description": "Batman faces the Joker, a criminal mastermind.",
+    "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "rating": 9.0
+  },
+  {
+    "title": "The Matrix",
+    "description": "A computer hacker learns about the true nature of reality.",
+    "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+    "rating": 8.7
+  },
+  {
+    "title": "Parasite",
+    "description": "A poor family infiltrates a rich household, leading to unexpected consequences.",
+    "posterURL": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "rating": 8.6
+  },
+  {
+    "title": "The Lion King",
+    "description": "A lion cub flees after his father's death and returns to reclaim his throne.",
+    "posterURL": "https://image.tmdb.org/t/p/w500/2DtPSyODKWXluIRV7PVru0SSzja.jpg",
+    "rating": 8.5
+  },
+  {
+    "title": "Gladiator",
+    "description": "A Roman general seeks revenge after being betrayed and forced into slavery.",
+    "posterURL": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+    "rating": 8.5
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over years, finding solace and eventual redemption.",
+    "posterURL": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+    "rating": 9.3
+  },
+  {
+    "title": "Avengers: Endgame",
+    "description": "The Avengers assemble to undo Thanos' destruction and restore balance to the universe.",
+    "posterURL": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "rating": 8.4
+  },
+  {
+    "title": "Joker",
+    "description": "A mentally troubled comedian's descent into madness leads to chaos in Gotham.",
+    "posterURL": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+    "rating": 8.5
+  }
+]
