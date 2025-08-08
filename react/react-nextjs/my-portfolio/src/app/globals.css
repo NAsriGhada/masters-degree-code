@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf6ec;
+  /* Beige background */
+  --foreground: #3a2c1d;
+  /* Rich brown text */
+  --accent: #d8b892;
+  /* Soft gold/beige accent */
+
+  --font-sans: system-ui, sans-serif;
+  --font-mono: 'Courier New', monospace;
+}
+
+/* Dark Mode with prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2d261f;
+    /* Dark chocolate */
+    --foreground: #f5e9d8;
+    /* Creamy beige text */
+    --accent: #b89e7c;
+    /* Muted warm gold */
+  }
+}
+
+/* Apply root styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
