@@ -1,0 +1,19 @@
+# Ignore node_modules
+node_modules/
+
+# Package lock file
+package-lock.json
+
+# Ignore image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Ignore PDF files
+*.pdf
+
+# Ignore README files
+readme.md
+README.md
+
