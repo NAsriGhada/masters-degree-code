@@ -9,6 +9,7 @@ package-lock.json
 *.jpeg
 *.png
 *.gif
+*.webp
 
 # Ignore PDF files
 *.pdf
