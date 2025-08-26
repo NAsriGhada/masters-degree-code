@@ -1,0 +1,160 @@
+:root {
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+    --accent-2: #34d399;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.container {
+    width: min(100%, 1000px);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Nav */
+.nav {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    background: #0f172af0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.nav .brand {
+    font-weight: 800;
+    letter-spacing: .5px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav .links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero */
+.hero {
+    padding: 4rem 0 2rem;
+    background: radial-gradient(800px 300px at 50% -10%, #1f2937, transparent);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 .5rem;
+}
+
+.hero p {
+    color: var(--muted);
+    margin: 0 0 1rem;
+}
+
+/* Grid Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+/* List */
+.list {
+    background: var(--card);
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    line-height: 1.8;
+}
+
+/* Form */
+.form {
+    display: grid;
+    gap: .8rem;
+    max-width: 560px;
+    background: var(--card);
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.form label {
+    display: grid;
+    gap: .25rem;
+    color: var(--muted);
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: .7rem .8rem;
+    border-radius: 10px;
+    border: 1px solid #374151;
+    background: #0b1220;
+    color: var(--text);
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: transparent;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    background: linear-gradient(180deg, var(--accent), #3b82f6);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.05);
+}
+
+/* Closed page */
+.closed {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.closed .card {
+    text-align: center;
+}
