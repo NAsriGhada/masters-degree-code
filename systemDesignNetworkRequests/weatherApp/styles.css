@@ -1,0 +1,172 @@
+:root {
+    --bg: #0f1220;
+    --panel: #1a1f36;
+    --text: #e7e9f1;
+    --muted: #a7adc4;
+    --accent: #7aa2ff;
+    --accent-2: #52d3aa;
+    --danger: #ff6b6b;
+    --ring: #2d3759;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: radial-gradient(1200px 700px at 70% -10%, #212749, #0f1220 60%);
+    color: var(--text);
+    font: 16px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+}
+
+.app {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.topbar {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.3px;
+}
+
+.search {
+    display: flex;
+    gap: 8px;
+}
+
+.search input {
+    width: 260px;
+    padding: 10px 12px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--ring);
+    border-radius: 10px;
+    outline: none;
+}
+
+.search input:focus {
+    border-color: var(--accent);
+}
+
+.search button,
+.geo {
+    padding: 10px 14px;
+    background: linear-gradient(180deg, var(--accent), #557ae6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.geo {
+    background: linear-gradient(180deg, var(--accent-2), #33ba90);
+}
+
+.status {
+    min-height: 24px;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+.card {
+    background: linear-gradient(180deg, #222846, #1a1f36);
+    border: 1px solid var(--ring);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.hidden {
+    display: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+h2 {
+    margin: 0 0 2px 0;
+    font-size: 1.35rem;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.tiny {
+    font-size: 0.85rem;
+}
+
+.temp {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.unit {
+    font-size: 1.25rem;
+    margin-left: 4px;
+    color: var(--muted);
+}
+
+.grid {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.fact {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--ring);
+    border-radius: 12px;
+    padding: 12px;
+    display: grid;
+    gap: 4px;
+}
+
+.fact .label {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    .topbar {
+        grid-template-columns: 1fr;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .temp {
+        font-size: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

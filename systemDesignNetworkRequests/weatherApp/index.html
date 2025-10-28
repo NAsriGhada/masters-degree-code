@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>Weather Now</h1>
+      <form id="search-form" class="search">
+        <input
+          id="city-input"
+          type="text"
+          placeholder="Search city (e.g., Oslo)"
+          aria-label="City"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+      <button id="geo-btn" class="geo" title="Use my location">📍</button>
+    </header>
+
+    <section id="card" class="card hidden" aria-live="polite">
+      <div class="row">
+        <div>
+          <h2 id="place">—</h2>
+          <p id="desc" class="muted">—</p>
+          <p id="time" class="muted tiny">—</p>
+        </div>
+        <div class="temp">
+          <span id="temp">—</span><span class="unit">°C</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="fact">
+          <span class="label">Feels like</span>
+          <span id="feels">—°C</span>
+        </div>
+        <div class="fact">
+          <span class="label">Humidity</span>
+          <span id="humidity">—%</span>
+        </div>
+        <div class="fact">
+          <span class="label">Wind</span>
+          <span id="wind">— m/s</span>
+        </div>
+        <div class="fact">
+          <span class="label">Pressure</span>
+          <span id="pressure">— hPa</span>
+        </div>
+      </div>
+    </section>
+
+    <p id="status" class="status"></p>
+  </main>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
