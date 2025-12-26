@@ -1,0 +1,93 @@
+<div class="wrap">
+  <h1>Angular DOM Benchmark — Todo</h1>
+
+  <section class="row">
+    <div>
+      <label>Task</label>
+      <input [(ngModel)]="name" placeholder="Task name" />
+    </div>
+
+    <div>
+      <label>Priority</label>
+      <select [(ngModel)]="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+
+    <button (click)="addTask()" [disabled]="!canAdd">Add</button>
+
+    <div class="total"><strong>Total:</strong> {{ taskCount }}</div>
+  </section>
+
+  <hr />
+
+  <section class="row buttons">
+    <button (click)="runRenderBench(100)">Render 100</button>
+    <button (click)="runRenderBench(500)">Render 500</button>
+    <button (click)="runRenderBench(1000)">Render 1000</button>
+    <button (click)="runUpdateBench()" [disabled]="taskCount === 0">Update 50</button>
+    <button (click)="runDeleteBench()" [disabled]="taskCount === 0">Delete 50</button>
+    <button (click)="runAll()">Run all</button>
+    <button (click)="clearResults()">Clear results</button>
+  </section>
+
+  <hr />
+
+  <section class="edit" *ngIf="editId !== null">
+    <h3>Edit Task #{{ editId }}</h3>
+    <div class="row">
+      <div>
+        <label>Name</label>
+        <input [(ngModel)]="editName" />
+      </div>
+
+      <div>
+        <label>Priority</label>
+        <select [(ngModel)]="editPriority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+
+      <button (click)="saveEdit()">Save</button>
+      <button (click)="editId = null">Cancel</button>
+    </div>
+  </section>
+
+  <h2>Tasks</h2>
+
+  <div class="list" *ngIf="tasks.length === 0">No tasks.</div>
+
+  <div class="list" *ngIf="tasks.length > 0">
+    <div class="item" *ngFor="let t of tasks; trackBy: trackById">
+      <div><strong>{{ t.name }}</strong></div>
+      <div class="prio">{{ t.priority }}</div>
+      <div class="actions">
+        <button (click)="startEdit(t)">Edit</button>
+        <button (click)="removeTask(t.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Benchmark results</h2>
+
+  <p *ngIf="results.length === 0">No results yet.</p>
+
+  <table *ngIf="results.length > 0" class="table">
+    <thead>
+      <tr>
+        <th>Test</th>
+        <th class="right">ms</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of results">
+        <td>{{ r.label }}</td>
+        <td class="right">{{ r.ms }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
