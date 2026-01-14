@@ -1,0 +1,5 @@
+export const Events = Object.freeze({
+  BOOK_BORROWED: "BOOK_BORROWED",
+  BOOK_RETURNED: "BOOK_RETURNED",
+  BOOK_OVERDUE: "BOOK_OVERDUE",
+});
